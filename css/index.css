@@ -1,3 +1,616 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
 
 
+
+/* =============== Begin: General Styles =============== */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 70px auto 0;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+p {
+    line-height: 125%;
+}
+
+hr {
+    width: 100%;
+    margin: 40px auto;
+}
+
+header {
+    display: flex;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0;
+}
+
+article {
+    box-sizing: border-box;
+    padding: 5px;
+}
+/* =============== End: General Styles =============== */
+
+
+
+/* =============== Begin: Navigation Styles =============== */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+
+    width: 100vw;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.97);
+    padding: 15px 0;
+}
+
+nav a {
+    margin: 0 Calc(1.5vw + 10px);
+    font-size: 14px;
+    color: #777;
+}
+
+nav a:hover {
+    color: #1e90ff;
+}
+
+.logo {
+    width: 183px;
+    height: 36px;
+    background: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.spin {
+    transition: 0.4s ease-in-out;
+}
+
+.spin:hover {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+.burger {
+    display: none;
+}
+/* =============== End: Navigation Styles =============== */
+
+
+
+/* =============== Begin: Header Styles =============== */
+.head-home {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.head-svc {
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.head-svc > div {
+    /* This is for the header image */
+    width: 100%;
+    height: 200px;
+
+    margin-bottom: 35px;
+
+    background: url('../img/services-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.head-svc h1 {
+    font-size: 26px;
+}
+
+.big-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.big-box h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+.big-box a {
+    border: 1px solid #000;
+    padding: 7px 35px;
+    color: #000;
+}
+
+.big-box a:hover {
+    background: #1e90ff;
+    color: #fff;
+    border-color: #fff;
+}
+
+.img-head {
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../img/header-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 379px;
+    height: 379px;
+    border-radius: 100%;
+}
+/* =============== End: Header Styles =============== */
+
+
+
+/* =============== Begin: Main Styles =============== */
+.main-home {
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-svc {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: calc(100% + 30px);
+    /* Greater than 100% width used to counter the positioning change of negative margin */
+    margin: -15px;
+    /* Negative margin used to make the article children appear to only have gaps on the inside of the <main> */
+    padding: 5px 0;
+    /* Padding here bc margin between the HRs didnt seem equal due to the negative margin I think... */
+}
+
+.main-svc article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 430px;
+    padding: 25px;
+    margin: 15px;
+    background: #eee;
+    border: 1px solid #000;
+}
+
+.main-svc article a {
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 12px 35px;
+    margin-top: 10px;
+    background: #fff;
+    color: #000;
+    font-size: 13px;
+}
+
+.main-svc article a:hover {
+    background: #1e90ff;
+    color: #fff;
+    border-color: #1e90ff;
+}
+/* =============== End: Main Styles =============== */
+
+
+
+/* =============== Begin: Section Styles =============== */
+.sec-svc {
+    align-items: flex-start;
+    margin-bottom: 70px;
+}
+
+.sec-svc article {
+    width: 50%;
+    padding: 0px;
+}
+
+.sec-svc ul {
+    margin-top: 20px;
+    list-style: square;
+    list-style-position: inside;
+}
+
+.sec-svc ul li {
+    margin: 10px 0;
+}
+
+.sec-svc > div {
+    background: url('../img/services-info.png');
+    width: 420px;
+    height: 300px;
+}
+
+.img-snips {
+    background: url("../img/mid-page-accent.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 182px;
+}
+/* =============== End: Section Styles =============== */
+
+
+
+/* =============== Begin: Footer Styles =============== */
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer address {
+    align-self: flex-start;
+    padding: 5px;
+}
+
+footer a {
+    color: #000;
+}
+
+footer a:hover {
+    color: #1e90ff;
+}
+
+.copy {
+    align-self: center;
+    margin: 20px 0;
+}
+/* =============== End: Footer Styles =============== */
+
+
+
+@media only screen and (max-width: 906px) {
+/* =============== Begin: General Styles =============== */
+    hr {
+        width: 90%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+/* =============== End: General Styles =============== */
+
+
+
+/* =============== Begin: Navigation Styles =============== */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        transition: .2s ease-out;
+
+        width: 100%;
+        height: 60px;
+    }
+    nav a {
+        display: none;
+        order: 2;
+        margin: 0 Calc(1.5vw + 10px);
+        font-size: 20px;
+        color: #777;
+    }
+    .logo {
+        width: 183px;
+        order: 1;
+        display: inline-block;
+    }
+    
+    .change {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        
+        height: 100vh;
+        padding: 50px 0;
+    }
+
+    .change a {
+        display: inline-block;
+    }
+    
+    .burger {
+        order: 3;
+        display: inline-block;
+        margin: 0 Calc(1.5vw + 10px);
+        cursor: pointer;
+    }
+
+    .bgr1,
+    .bgr2,
+    .bgr3 {
+        width: 35px;
+        height: 5px;
+        background-color: #000;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bgr1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        -ms-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bgr2 {
+        opacity: 0;
+    }
+
+    .change .bgr3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        -ms-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+/*  =============== End: Navigation Styles =============== */
+
+
+
+/* =============== Begin: Home Page Styles =============== */
+.main-home {
+    flex-direction: column;
+    align-items: center;
+}
+.main-home section {
+    flex-direction: column;
+}
+.main-home article {
+    width: 80%;
+    margin-top: 20px;
+    
+}
+/* =============== End: Home Page Styles =============== */
+
+
+
+/* =============== Begin: Services Styles =============== */
+    .head-svc {
+        align-items: center;
+    }
+
+    .head-svc h1,
+    .head-svc p {
+        width: 90%;
+    }
+
+    .main-svc {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sec-svc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec-svc div {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 20px;
+    }
+
+    .sec-svc article {
+        order: 2;
+        width: 90%;
+    }
+/* =============== End: Services Styles =============== */
+
+
+
+/* =============== Begin: Footer Styles =============== */
+    footer address{
+        align-self: center;
+        margin-bottom: 10px;
+    }
+/* =============== End: Footer Styles =============== */
+}
+
+
+/* =============== Below is to fix the header from scrunching up below ~790px =============== */
+@media only screen and (max-width: 795px) {
+    .head-home {
+        flex-direction: column;
+        margin: 150px 0 80px 0;
+    }
+    
+    .big-box h1 {
+        color: #fff;
+    }
+    
+    .big-box a {
+        border-color: #fff;
+        color: #fff;
+    }
+    
+    .img-head {
+        transform: translateY(-20px);
+        position: absolute;
+        filter: blur(2px);
+        z-index: -1;
+    }
+}

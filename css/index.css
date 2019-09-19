@@ -353,7 +353,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 430px;
+    width: 46%;
     padding: 25px;
     margin: 15px;
     background: #eee;
@@ -520,6 +520,11 @@ footer a:hover {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .main-svc article {
+        width: 100%;
+        max-width: 400px;
     }
 
     .sec-svc {

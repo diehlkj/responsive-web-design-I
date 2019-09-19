@@ -206,6 +206,7 @@ article {
     box-sizing: border-box;
     padding: 5px;
 }
+
 /* =============== End: General Styles =============== */
 
 
@@ -257,6 +258,7 @@ nav a:hover {
 .burger {
     display: none;
 }
+
 /* =============== End: Navigation Styles =============== */
 
 
@@ -323,6 +325,7 @@ nav a:hover {
     height: 379px;
     border-radius: 100%;
 }
+
 /* =============== End: Header Styles =============== */
 
 
@@ -372,6 +375,7 @@ nav a:hover {
     color: #fff;
     border-color: #1e90ff;
 }
+
 /* =============== End: Main Styles =============== */
 
 
@@ -410,6 +414,7 @@ nav a:hover {
     background-position: center;
     height: 182px;
 }
+
 /* =============== End: Section Styles =============== */
 
 
@@ -437,12 +442,14 @@ footer a:hover {
     align-self: center;
     margin: 20px 0;
 }
+
 /* =============== End: Footer Styles =============== */
 
 
 
 @media only screen and (max-width: 800px) {
-/* =============== Begin: General Styles =============== */
+
+    /* =============== Begin: General Styles =============== */
     hr {
         width: 95%;
     }
@@ -450,11 +457,12 @@ footer a:hover {
     body {
         overflow-x: hidden;
     }
-/* =============== End: General Styles =============== */
+
+    /* =============== End: General Styles =============== */
 
 
 
-/* =============== Begin: Navigation Styles =============== */
+    /* =============== Begin: Navigation Styles =============== */
     nav {
         flex-direction: row;
         flex-wrap: wrap;
@@ -463,36 +471,42 @@ footer a:hover {
 
         width: 100%;
     }
+
     nav a {
         order: 2;
         margin: 0 Calc(1.5vw + 10px);
     }
+
     .logo {
         width: 100%;
         margin-bottom: 30px;
         order: 1;
     }
-/*  =============== End: Navigation Styles =============== */
+
+    /*  =============== End: Navigation Styles =============== */
 
 
 
-/* =============== Begin: Home Page Styles =============== */
-.head-home {
-    margin-top: 150px;
-    margin-bottom: 70px;
-}
-.main-home {
-    width: 95%;
-    margin: 0 auto;
-}
-.img-head {
-    display: none;
-}
-/* =============== End: Home Page Styles =============== */
+    /* =============== Begin: Home Page Styles =============== */
+    .head-home {
+        margin-top: 150px;
+        margin-bottom: 70px;
+    }
+
+    .main-home {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .img-head {
+        display: none;
+    }
+
+    /* =============== End: Home Page Styles =============== */
 
 
 
-/* =============== Begin: Services Styles =============== */
+    /* =============== Begin: Services Styles =============== */
     .head-svc {
         align-items: center;
     }
@@ -525,16 +539,18 @@ footer a:hover {
         order: 2;
         width: 90%;
     }
-/* =============== End: Services Styles =============== */
+
+    /* =============== End: Services Styles =============== */
 
 
 
-/* =============== Begin: Footer Styles =============== */
-   footer {
-       width: 95%;
-       margin: 0 auto;
-   }
-/* =============== End: Footer Styles =============== */
+    /* =============== Begin: Footer Styles =============== */
+    footer {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    /* =============== End: Footer Styles =============== */
 }
 
 
@@ -546,6 +562,7 @@ footer a:hover {
         align-items: center;
         padding: 0;
     }
+
     nav a {
         width: 100%;
         margin: 0;
@@ -553,39 +570,46 @@ footer a:hover {
         border-bottom: 1px solid #777;
         text-align: center;
     }
+
     .logo {
         padding: 35px;
         margin: 0;
     }
+
     .spin:hover {
         transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         -webkit-transform: rotate(0deg);
     }
-/*  =============== End: Navigation Styles =============== */
+
+    /*  =============== End: Navigation Styles =============== */
 
 
 
-/* =============== Begin: Home Page Styles =============== */
-.head-home {
-    margin-top: 0;
-}
-.main-home {
-    flex-direction: column;
-    align-items: center;
-}
-.main-home section {
-    flex-direction: column;
-}
-.main-home article {
-    margin-bottom: 30px;
-    
-}
-/* =============== End: Home Page Styles =============== */
+    /* =============== Begin: Home Page Styles =============== */
+    .head-home {
+        margin-top: 0;
+    }
+
+    .main-home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-home section {
+        flex-direction: column;
+    }
+
+    .main-home article {
+        margin-bottom: 30px;
+
+    }
+
+    /* =============== End: Home Page Styles =============== */
 
 
 
-/* =============== Begin: Services Styles =============== */
+    /* =============== Begin: Services Styles =============== */
     .head-svc {
         align-items: center;
     }
@@ -618,5 +642,6 @@ footer a:hover {
         order: 2;
         width: 90%;
     }
-/* =============== End: Services Styles =============== */
+
+    /* =============== End: Services Styles =============== */
 }
